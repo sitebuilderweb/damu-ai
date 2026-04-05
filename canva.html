@@ -7,77 +7,81 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="brand">
-        <div class="brand-mark">DA</div>
-        <span>Damu AI</span>
-      </a>
-      <nav class="main-nav">
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo"><span class="logo-icon">📘</span><span>Damu AI</span></a>
+      <nav class="menu">
         <a href="index.html">Басты бет</a>
         <a href="index.html#courses">Курстар</a>
-        <a href="index.html#about">Damu AI</a>
       </nav>
     </div>
   </header>
 
-  <main class="course-page-wrap">
-    <div class="container">
-      <a href="index.html" class="back-link">← Барлық курстарға қайту</a>
+  <section class="page-hero">
+    <div class="container page-top">
+      <a href="index.html#courses" class="back-btn">← Барлық курстар</a>
+      <div class="page-title">
+        <h1>Canva курсы</h1>
+        <p>Canva платформасында дизайн, мәтін, шаблон және визуал материал жасау негіздері.</p>
+      </div>
+    </div>
+  </section>
 
-      <section class="course-hero">
-        <div class="course-hero-left">
-          <span class="section-label">Canva курсы</span>
-          <h1>Canva-мен дизайн жасауды үйреніңіз</h1>
-          <p>Canva арқылы пост, презентация, мәтін, шаблон және графикамен жұмыс істеуді меңгеріңіз.</p>
-        </div>
-        <div class="course-hero-right">
-          <div class="course-big-icon">🎨</div>
+  <main class="course-layout">
+    <div class="container course-content">
+      <section class="info-box">
+        <h2>Курс мазмұны</h2>
+        <p>Бұл курста Canva платформасының интерфейсімен танысып, дизайн шаблондарын таңдау, мәтін енгізу, сурет пен графикамен жұмыс істеу жолдарын үйренесіз.</p>
+      </section>
+
+      <section class="lessons-box">
+        <h2>Сабақтар</h2>
+        <div class="lesson-list">
+          <div class="lesson-item"><span>1-сабақ — Canva-ға кіріспе</span><a href="https://youtu.be/8XroIaIyPXY?si=J5krrXheUSEi7FcF" target="_blank">Сабақты ашу</a></div>
+          <div class="lesson-item"><span>2-сабақ — Интерфейспен танысу</span><a href="https://youtu.be/LSoFhtOnUaE?si=HeUScebhPesfhyCI" target="_blank">Сабақты ашу</a></div>
+          <div class="lesson-item"><span>3-сабақ — Шаблондармен жұмыс</span><a href="https://youtu.be/iKq5Cdff6uk?si=Ef8z4qQGS8ZqpTlr" target="_blank">Сабақты ашу</a></div>
+          <div class="lesson-item"><span>4-сабақ — Текстпен жұмыс</span><a href="https://youtu.be/nIhfQqX__Rg?si=PuwD7ACmn1tWfnLu" target="_blank">Сабақты ашу</a></div>
+          <div class="lesson-item"><span>5-сабақ — Суреттер мен графика</span><a href="https://youtu.be/OZGL-o0Y4cg?si=DddsQisGswqiHQY4" target="_blank">Сабақты ашу</a></div>
         </div>
       </section>
 
-      <section class="lessons-section">
-        <h2>Сабақтар</h2>
-        <div class="lessons-grid">
-          <div class="lesson-card">
-            <h3>1-сабақ</h3>
-            <p>Canva-ға кіріспе</p>
-            <a href="https://youtu.be/8XroIaIyPXY?si=J5krrXheUSEi7FcF" target="_blank">Сабақты ашу</a>
+      <section class="test-box">
+        <h2>Тест</h2>
+        <form id="quiz-canva">
+          <div class="quiz-question">
+            <p>1. Canva не үшін қолданылады?</p>
+            <label><input type="radio" name="q1" value="a"> Видео ойын ойнау үшін</label>
+            <label><input type="radio" name="q1" value="b"> Дизайн жасау үшін</label>
+            <label><input type="radio" name="q1" value="c"> Телефон жөндеу үшін</label>
           </div>
 
-          <div class="lesson-card">
-            <h3>2-сабақ</h3>
-            <p>Интерфейспен танысу</p>
-            <a href="https://youtu.be/LSoFhtOnUaE?si=HeUScebhPesfhyCI" target="_blank">Сабақты ашу</a>
+          <div class="quiz-question">
+            <p>2. Canva-да мәтін қосу үшін не істейміз?</p>
+            <label><input type="radio" name="q2" value="a"> Text бөлімін ашамыз</label>
+            <label><input type="radio" name="q2" value="b"> Сайтты жабамыз</label>
+            <label><input type="radio" name="q2" value="c"> Телефонды өшіреміз</label>
           </div>
 
-          <div class="lesson-card">
-            <h3>3-сабақ</h3>
-            <p>Шаблондармен жұмыс</p>
-            <a href="https://youtu.be/iKq5Cdff6uk?si=Ef8z4qQGS8ZqpTlr" target="_blank">Сабақты ашу</a>
+          <div class="quiz-question">
+            <p>3. Шаблондар Canva-да не үшін керек?</p>
+            <label><input type="radio" name="q3" value="a"> Дайын дизайн негізі үшін</label>
+            <label><input type="radio" name="q3" value="b"> Тек музыка тыңдау үшін</label>
+            <label><input type="radio" name="q3" value="c"> Wi-Fi қосу үшін</label>
           </div>
 
-          <div class="lesson-card">
-            <h3>4-сабақ</h3>
-            <p>Текстпен жұмыс</p>
-            <a href="https://youtu.be/nIhfQqX__Rg?si=PuwD7ACmn1tWfnLu" target="_blank">Сабақты ашу</a>
-          </div>
+          <button type="button" class="submit-btn" onclick="checkQuiz('quiz-canva','result-canva','finish-canva',['b','a','a'])">Тестті аяқтау</button>
+          <div id="result-canva" class="result-box"></div>
+        </form>
+      </section>
 
-          <div class="lesson-card">
-            <h3>5-сабақ</h3>
-            <p>Суреттер мен графика</p>
-            <a href="https://youtu.be/OZGL-o0Y4cg?si=DddsQisGswqiHQY4" target="_blank">Сабақты ашу</a>
-          </div>
-        </div>
+      <section id="finish-canva" class="finish-box">
+        <h2>🎉 Курс аяқталды!</h2>
+        <p>Сіз Canva курсын сәтті аяқтадыңыз.</p>
+        <a href="index.html#courses" class="home-btn">Барлық курстарға оралу</a>
       </section>
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>© 2026 Damu AI</div>
-      <div>Canva курсы</div>
-    </div>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
