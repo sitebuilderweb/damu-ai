@@ -7,158 +7,122 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="brand">
-        <div class="brand-mark">DA</div>
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">📘</span>
         <span>Damu AI</span>
       </a>
 
-      <nav class="main-nav">
+      <nav class="menu">
         <a href="index.html">Басты бет</a>
         <a href="#courses">Курстар</a>
-        <a href="#about">Damu AI</a>
+        <a href="#features">Артықшылықтар</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-badge">Заманауи оқу платформасы</div>
-        <h1>Damu AI</h1>
-        <p class="hero-text">
-          Заманауи AI құралдарын үйреніңіз: Canva, ChatGPT, Gemini, Kahoot, NotebookLM
-        </p>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-badge">AI арқылы білім беру платформасы</div>
+      <h1>Damu AI</h1>
+      <p>
+        Заманауи AI құралдарын үйреніңіз: Canva, ChatGPT, Gemini, Kahoot, NotebookLM
+      </p>
 
-        <div class="hero-actions">
-          <a href="#courses" class="btn btn-primary">Курстарды қарау</a>
-          <a href="#about" class="btn btn-secondary">Damu AI-мен танысу</a>
-        </div>
+      <div class="hero-buttons">
+        <a href="#courses" class="btn btn-primary">Курстарды қарау</a>
+        <a href="#features" class="btn btn-secondary">Толығырақ</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="courses section" id="courses">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Курстар</span>
+        <h2>Барлық курстар</h2>
+        <p>Өзіңізге ыңғайлы курсты таңдап, сабақтарды көріп, тесттен өте аласыз.</p>
       </div>
 
-      <div class="hero-glow hero-glow-1"></div>
-      <div class="hero-glow hero-glow-2"></div>
-    </section>
+      <div class="cards-grid">
+        <a href="canva.html" class="course-card">
+          <div class="course-icon">🎨</div>
+          <h3>Canva</h3>
+          <p>Дизайн, шаблон, мәтін, графика және презентация жасау.</p>
+          <span class="card-btn">Курсқа өту</span>
+        </a>
 
-    <section class="section section-courses" id="courses">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-label">Курстар</span>
-          <h2>Біздің курстар</h2>
-          <p>AI және цифрлық құралдарды қарапайым әрі түсінікті форматта үйреніңіз.</p>
+        <a href="chatgpt.html" class="course-card">
+          <div class="course-icon">🤖</div>
+          <h3>ChatGPT</h3>
+          <p>AI көмекшімен жұмыс, мәтін жазу, идея табу, тапсырма орындау.</p>
+          <span class="card-btn">Курсқа өту</span>
+        </a>
+
+        <a href="gemini.html" class="course-card">
+          <div class="course-icon">✨</div>
+          <h3>Gemini</h3>
+          <p>Google AI құралымен мәтін, жоспар, идея және ізденіс жасау.</p>
+          <span class="card-btn">Курсқа өту</span>
+        </a>
+
+        <a href="kahoot.html" class="course-card">
+          <div class="course-icon">📊</div>
+          <h3>Kahoot</h3>
+          <p>Онлайн тест, викторина, ойын түріндегі сабақтар жасау.</p>
+          <span class="card-btn">Курсқа өту</span>
+        </a>
+
+        <a href="notebooklm.html" class="course-card">
+          <div class="course-icon">📚</div>
+          <h3>NotebookLM</h3>
+          <p>AI арқылы құжаттарды талдау, қысқаша мазмұн және оқу құралы.</p>
+          <span class="card-btn">Курсқа өту</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Артықшылықтар</span>
+        <h2>Неге Damu AI?</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-box">
+          <div class="feature-emoji">🎥</div>
+          <h3>Видео сабақтар</h3>
+          <p>Сабақтарды YouTube арқылы ыңғайлы форматта көресіз.</p>
         </div>
 
-        <div class="course-grid">
-          <a href="canva.html" class="course-card">
-            <div class="course-icon">🎨</div>
-            <h3>Canva</h3>
-            <p>Дизайн жасау, шаблондармен жұмыс, мәтін мен графика қосу.</p>
-            <span class="card-arrow">Курсқа өту</span>
-          </a>
+        <div class="feature-box">
+          <div class="feature-emoji">📝</div>
+          <h3>Тесттер</h3>
+          <p>Әр курс соңында біліміңізді тексеруге арналған тесттер бар.</p>
+        </div>
 
-          <a href="chatgpt.html" class="course-card">
-            <div class="course-icon">🤖</div>
-            <h3>ChatGPT</h3>
-            <p>Мәтін жазу, идея табу, сұрақ қою және AI-мен жұмыс істеу.</p>
-            <span class="card-arrow">Курсқа өту</span>
-          </a>
+        <div class="feature-box">
+          <div class="feature-emoji">🚀</div>
+          <h3>Қарапайым оқу</h3>
+          <p>Интерфейс жеңіл, түсінікті және телефоннан да ашылады.</p>
+        </div>
 
-          <a href="gemini.html" class="course-card">
-            <div class="course-icon">✨</div>
-            <h3>Gemini</h3>
-            <p>Google AI құралдарын қолдану және тиімді сұраныс жазу.</p>
-            <span class="card-arrow">Курсқа өту</span>
-          </a>
-
-          <a href="kahoot.html" class="course-card">
-            <div class="course-icon">📊</div>
-            <h3>Kahoot</h3>
-            <p>Интерактивті тест, викторина және сыныппен жұмыс жасау.</p>
-            <span class="card-arrow">Курсқа өту</span>
-          </a>
-
-          <a href="notebooklm.html" class="course-card">
-            <div class="course-icon">📘</div>
-            <h3>NotebookLM</h3>
-            <p>Құжаттармен жұмыс, қысқаша мазмұн және AI талдау құралы.</p>
-            <span class="card-arrow">Курсқа өту</span>
-          </a>
+        <div class="feature-box">
+          <div class="feature-emoji">🌍</div>
+          <h3>Қазақ тілінде</h3>
+          <p>Негізгі мәтіндер қазақ тілінде жасалған.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section section-features" id="about">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-label">Артықшылықтар</span>
-          <h2>Неге Damu AI?</h2>
-          <p>Оқу ыңғайлы, түсінікті және тәжірибеге бағытталған.</p>
-        </div>
-
-        <div class="feature-grid">
-          <div class="feature-card">
-            <div class="feature-icon">📚</div>
-            <h3>Қарапайым сабақтар</h3>
-            <p>Сабақтар түсінікті тілде және кезең-кезеңімен жасалған.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">🎥</div>
-            <h3>Видео формат</h3>
-            <p>Материалды видео арқылы тез әрі ыңғайлы үйренуге болады.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">🧠</div>
-            <h3>Пайдалы AI құралдары</h3>
-            <p>Қазіргі заманда қажет ең пайдалы платформаларды меңгересіз.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">🚀</div>
-            <h3>Тәжірибелік оқу</h3>
-            <p>Тек теория емес, нақты қолдануға арналған сабақтар.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-bottom-icons">
-      <div class="container">
-        <div class="bottom-panel">
-          <div class="bottom-item">
-            <div class="bottom-item-icon">⚡</div>
-            <div>
-              <h4>Жылдам бастау</h4>
-              <p>Курстарға тез өтіп, оқуды бірден бастауға болады.</p>
-            </div>
-          </div>
-
-          <div class="bottom-item">
-            <div class="bottom-item-icon">💡</div>
-            <div>
-              <h4>Пайдалы білім</h4>
-              <p>Күнделікті жұмыс пен оқуға қажет дағдыларды дамытасыз.</p>
-            </div>
-          </div>
-
-          <div class="bottom-item">
-            <div class="bottom-item-icon">🌐</div>
-            <div>
-              <h4>Барлық құрылғыда</h4>
-              <p>Сайт телефонда да, ноутбукте де әдемі көрінеді.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container footer-inner">
-      <div>© 2026 Damu AI</div>
-      <div>Заманауи AI құралдарын үйреніңіз</div>
+      <p>© 2026 Damu AI</p>
+      <p>Білім беру платформасы</p>
     </div>
   </footer>
 </body>
