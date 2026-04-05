@@ -7,79 +7,97 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="container nav">
-      <a href="index.html" class="logo"><span class="logo-icon">📘</span><span>Damu AI</span></a>
-      <nav class="menu">
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a href="index.html" class="logo">
+        <div class="logo-mark">✦</div>
+        <div class="logo-text">
+          <span class="logo-title">Damu AI</span>
+          <span class="logo-sub">Online Learning Platform</span>
+        </div>
+      </a>
+      <nav class="nav">
         <a href="index.html">Басты бет</a>
         <a href="index.html#courses">Курстар</a>
       </nav>
     </div>
   </header>
 
-  <section class="page-hero">
-    <div class="container page-top">
+  <section class="course-hero">
+    <div class="container course-head">
       <a href="index.html#courses" class="back-btn">← Барлық курстар</a>
-      <div class="page-title">
+      <div>
         <h1>NotebookLM курсы</h1>
-        <p>NotebookLM арқылы құжаттарды талдау, қысқаша мазмұн жасау және оқу материалын дайындау жолдары.</p>
+        <p>NotebookLM арқылы құжаттарды талдау, қысқаша мазмұн, Study Guide, Briefing Doc және Audio Overview жасауды үйреніңіз.</p>
       </div>
     </div>
   </section>
 
-  <main class="course-layout">
-    <div class="container course-content">
-      <section class="info-box">
-        <h2>Курс мазмұны</h2>
-        <p>Бұл курста NotebookLM жүйесіне құжат енгізу, мазмұнын талдау, AI арқылы конспект, оқу құралы және қысқаша шолу жасау үйретіледі.</p>
-      </section>
+  <main class="course-main">
+    <div class="container course-layout">
+      <div class="panel">
+        <h2>Сабақ мазмұны</h2>
+        <p>
+          Бұл курста NotebookLM жүйесіне материал енгізу,
+          дереккөздермен жұмыс, AI арқылы талдау, қысқаша конспект құру,
+          Study Guide, Briefing Doc және Audio Overview мүмкіндіктерін пайдалану жолдары көрсетіледі.
+        </p>
 
-      <section class="lessons-box">
-        <h2>Сабақтар</h2>
         <div class="lesson-list">
-          <div class="lesson-item"><span>1-сабақ — NotebookLM-ге кіріспе</span><a href="https://youtu.be/Jd7yPMYo7jc?si=ONng9ICRE1u4MrqF" target="_blank">Сабақты ашу</a></div>
-          <div class="lesson-item"><span>2-сабақ — Құжат жүктеу</span><a href="https://youtu.be/fT914zpTZXU?si=J7nrXXO2BlxKV8dw" target="_blank">Сабақты ашу</a></div>
-          <div class="lesson-item"><span>3-сабақ — AI арқылы талдау</span><a href="https://youtu.be/um3yheLWzHc?si=eMtO0ljLrsT0Wq8A" target="_blank">Сабақты ашу</a></div>
-          <div class="lesson-item"><span>4-сабақ — Briefing Doc және Study Guide</span><a href="https://youtu.be/KbjUwZZoGKU?si=-cG3LCsKw7Am9s4y" target="_blank">Сабақты ашу</a></div>
-          <div class="lesson-item"><span>5-сабақ — Audio Overview</span><a href="https://youtu.be/gHMXAFrBC7w?si=LmFI9knTC3_3XzL0" target="_blank">Сабақты ашу</a></div>
-          <div class="lesson-item"><span>6-сабақ — Қорытынды</span><a href="https://youtu.be/K6CYtzOafxE?si=WHzOWYDrZH-wrtUY" target="_blank">Сабақты ашу</a></div>
-        </div>
-      </section>
+          <button class="lesson-btn active" onclick="setLesson('Jd7yPMYo7jc','1-сабақ — NotebookLM-ге кіріспе','NotebookLM платформасының негізгі мүмкіндіктерімен танысу.','https://youtu.be/Jd7yPMYo7jc?si=ONng9ICRE1u4MrqF', this)">1-сабақ — NotebookLM-ге кіріспе</button>
 
-      <section class="test-box">
+          <button class="lesson-btn" onclick="setLesson('fT914zpTZXU','2-сабақ — Құжат жүктеу','NotebookLM ішіне дереккөздер мен құжаттарды енгізу.','https://youtu.be/fT914zpTZXU?si=J7nrXXO2BlxKV8dw', this)">2-сабақ — Құжат жүктеу</button>
+
+          <button class="lesson-btn" onclick="setLesson('um3yheLWzHc','3-сабақ — AI арқылы талдау','Жүктелген материалдар бойынша AI талдау жасау.','https://youtu.be/um3yheLWzHc?si=eMtO0ljLrsT0Wq8A', this)">3-сабақ — AI арқылы талдау</button>
+
+          <button class="lesson-btn" onclick="setLesson('KbjUwZZoGKU','4-сабақ — Briefing Doc және Study Guide','Оқу материалы мен қысқаша нұсқаулық құру.','https://youtu.be/KbjUwZZoGKU?si=-cG3LCsKw7Am9s4y', this)">4-сабақ — Briefing Doc және Study Guide</button>
+
+          <button class="lesson-btn" onclick="setLesson('gHMXAFrBC7w','5-сабақ — Audio Overview','Материал бойынша аудио шолу жасау мүмкіндігі.','https://youtu.be/gHMXAFrBC7w?si=LmFI9knTC3_3XzL0', this)">5-сабақ — Audio Overview</button>
+
+          <button class="lesson-btn" onclick="setLesson('K6CYtzOafxE','6-сабақ — Қорытынды','NotebookLM құралын толық қолдануды қорытындылау.','https://youtu.be/K6CYtzOafxE?si=WHzOWYDrZH-wrtUY', this)">6-сабақ — Қорытынды</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <iframe id="mainVideo" class="video-frame" src="https://www.youtube.com/embed/Jd7yPMYo7jc" allowfullscreen></iframe>
+        <h3 id="videoTitle" class="video-title">1-сабақ — NotebookLM-ге кіріспе</h3>
+        <p id="videoDesc" class="video-desc">NotebookLM платформасының негізгі мүмкіндіктерімен танысу.</p>
+        <a id="videoLink" class="video-link" href="https://youtu.be/Jd7yPMYo7jc?si=ONng9ICRE1u4MrqF" target="_blank">YouTube-та ашу</a>
+
         <h2>Тест</h2>
+
         <form id="quiz-notebooklm">
           <div class="quiz-question">
             <p>1. NotebookLM не үшін қолданылады?</p>
-            <label><input type="radio" name="q1" value="a"> Құжаттарды талдау үшін</label>
-            <label><input type="radio" name="q1" value="b"> Көлік жуу үшін</label>
-            <label><input type="radio" name="q1" value="c"> Телефон жөндеу үшін</label>
+            <label><input type="radio" name="q1" value="a"> Құжаттарды талдау және оқу материалын жасау үшін</label>
+            <label><input type="radio" name="q1" value="b"> Телефон қаптау үшін</label>
+            <label><input type="radio" name="q1" value="c"> Фото түсіру үшін</label>
           </div>
 
           <div class="quiz-question">
             <p>2. NotebookLM қандай мүмкіндік береді?</p>
-            <label><input type="radio" name="q2" value="a"> Қысқаша мазмұн мен оқу құралы жасау</label>
-            <label><input type="radio" name="q2" value="b"> Есікті ашу</label>
-            <label><input type="radio" name="q2" value="c"> Дыбыс өшіру</label>
+            <label><input type="radio" name="q2" value="a"> Study Guide және қысқаша мазмұн жасау</label>
+            <label><input type="radio" name="q2" value="b"> Видеокарта орнату</label>
+            <label><input type="radio" name="q2" value="c"> Микрофон тазалау</label>
           </div>
 
           <div class="quiz-question">
             <p>3. Audio Overview деген не?</p>
             <label><input type="radio" name="q3" value="a"> Материалдың аудио шолуы</label>
             <label><input type="radio" name="q3" value="b"> Компьютер ойыны</label>
-            <label><input type="radio" name="q3" value="c"> Камера</label>
+            <label><input type="radio" name="q3" value="c"> Экран суреті</label>
           </div>
 
           <button type="button" class="submit-btn" onclick="checkQuiz('quiz-notebooklm','result-notebooklm','finish-notebooklm',['a','a','a'])">Тестті аяқтау</button>
           <div id="result-notebooklm" class="result-box"></div>
         </form>
-      </section>
 
-      <section id="finish-notebooklm" class="finish-box">
-        <h2>🎉 Курс аяқталды!</h2>
-        <p>Сіз NotebookLM курсын сәтті аяқтадыңыз.</p>
-        <a href="index.html#courses" class="home-btn">Барлық курстарға оралу</a>
-      </section>
+        <div id="finish-notebooklm" class="finish-box">
+          <h3>🎉 Курс аяқталды!</h3>
+          <p>Сіз NotebookLM курсын сәтті аяқтадыңыз.</p>
+          <a href="index.html#courses">Барлық курстарға оралу</a>
+        </div>
+      </div>
     </div>
   </main>
 
