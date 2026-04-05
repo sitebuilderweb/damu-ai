@@ -7,78 +7,95 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="container nav">
-      <a href="index.html" class="logo"><span class="logo-icon">📘</span><span>Damu AI</span></a>
-      <nav class="menu">
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a href="index.html" class="logo">
+        <div class="logo-mark">✦</div>
+        <div class="logo-text">
+          <span class="logo-title">Damu AI</span>
+          <span class="logo-sub">Online Learning Platform</span>
+        </div>
+      </a>
+      <nav class="nav">
         <a href="index.html">Басты бет</a>
         <a href="index.html#courses">Курстар</a>
       </nav>
     </div>
   </header>
 
-  <section class="page-hero">
-    <div class="container page-top">
+  <section class="course-hero">
+    <div class="container course-head">
       <a href="index.html#courses" class="back-btn">← Барлық курстар</a>
-      <div class="page-title">
+      <div>
         <h1>Gemini курсы</h1>
-        <p>Gemini AI құралымен мәтін, жоспар, идея және ақпаратпен жұмыс істеу негіздері.</p>
+        <p>Gemini AI құралымен мәтін құру, идея табу, жоспар жасау және дұрыс сұраныс беруді үйреніңіз.</p>
       </div>
     </div>
   </section>
 
-  <main class="course-layout">
-    <div class="container course-content">
-      <section class="info-box">
-        <h2>Курс мазмұны</h2>
-        <p>Gemini арқылы сұрақ қою, мәтін құрастыру, жоспар жасау және күнделікті жұмысты жеңілдету жолдары үйретіледі.</p>
-      </section>
+  <main class="course-main">
+    <div class="container course-layout">
+      <div class="panel">
+        <h2>Сабақ мазмұны</h2>
+        <p>
+          Бұл курста Gemini интерфейсімен танысып, сұраныс беру,
+          мәтін дайындау, идея генерациялау, жоспар құру және Google AI
+          құралын тиімді қолдану жолдарын үйренесіз.
+        </p>
 
-      <section class="lessons-box">
-        <h2>Сабақтар</h2>
         <div class="lesson-list">
-          <div class="lesson-item"><span>1-сабақ — Gemini-ге кіріспе</span><a href="https://youtu.be/FjFByBnClmI?si=Z6gTF1m0xAtOaThO" target="_blank">Сабақты ашу</a></div>
-          <div class="lesson-item"><span>2-сабақ — Негізгі интерфейс</span><a href="https://youtu.be/M0IkPs61L5c?si=cA5SelJ99RwvYOn6" target="_blank">Сабақты ашу</a></div>
-          <div class="lesson-item"><span>3-сабақ — Сұраныс беру</span><a href="https://youtu.be/FjFByBnClmI?si=Z6gTF1m0xAtOaThO" target="_blank">Сабақты ашу</a></div>
-          <div class="lesson-item"><span>4-сабақ — Мәтін және идея</span><a href="https://youtu.be/M0IkPs61L5c?si=cA5SelJ99RwvYOn6" target="_blank">Сабақты ашу</a></div>
-          <div class="lesson-item"><span>5-сабақ — Қорытынды</span><a href="https://youtu.be/FjFByBnClmI?si=Z6gTF1m0xAtOaThO" target="_blank">Сабақты ашу</a></div>
-        </div>
-      </section>
+          <button class="lesson-btn active" onclick="setLesson('FjFByBnClmI','1-сабақ — Gemini-ге кіріспе','Gemini платформасының негізгі мүмкіндіктерімен танысу.','https://youtu.be/FjFByBnClmI?si=Z6gTF1m0xAtOaThO', this)">1-сабақ — Gemini-ге кіріспе</button>
 
-      <section class="test-box">
+          <button class="lesson-btn" onclick="setLesson('M0IkPs61L5c','2-сабақ — Интерфейспен танысу','Gemini ішіндегі негізгі бөлімдер мен батырмалар.','https://youtu.be/M0IkPs61L5c?si=cA5SelJ99RwvYOn6', this)">2-сабақ — Интерфейспен танысу</button>
+
+          <button class="lesson-btn" onclick="setLesson('FjFByBnClmI','3-сабақ — Сұраныс беру','Gemini-ге нақты тапсырма жазу тәсілдері.','https://youtu.be/FjFByBnClmI?si=Z6gTF1m0xAtOaThO', this)">3-сабақ — Сұраныс беру</button>
+
+          <button class="lesson-btn" onclick="setLesson('M0IkPs61L5c','4-сабақ — Мәтін және идея','Мәтін, жоспар және идея шығару үшін қолдану.','https://youtu.be/M0IkPs61L5c?si=cA5SelJ99RwvYOn6', this)">4-сабақ — Мәтін және идея</button>
+
+          <button class="lesson-btn" onclick="setLesson('FjFByBnClmI','5-сабақ — Қорытынды','Gemini құралын тәжірибеде қолдануды қорытындылау.','https://youtu.be/FjFByBnClmI?si=Z6gTF1m0xAtOaThO', this)">5-сабақ — Қорытынды</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <iframe id="mainVideo" class="video-frame" src="https://www.youtube.com/embed/FjFByBnClmI" allowfullscreen></iframe>
+        <h3 id="videoTitle" class="video-title">1-сабақ — Gemini-ге кіріспе</h3>
+        <p id="videoDesc" class="video-desc">Gemini платформасының негізгі мүмкіндіктерімен танысу.</p>
+        <a id="videoLink" class="video-link" href="https://youtu.be/FjFByBnClmI?si=Z6gTF1m0xAtOaThO" target="_blank">YouTube-та ашу</a>
+
         <h2>Тест</h2>
+
         <form id="quiz-gemini">
           <div class="quiz-question">
             <p>1. Gemini дегеніміз не?</p>
             <label><input type="radio" name="q1" value="a"> AI құрал</label>
-            <label><input type="radio" name="q1" value="b"> Музыкалық аспап</label>
-            <label><input type="radio" name="q1" value="c"> Ойыншық</label>
+            <label><input type="radio" name="q1" value="b"> Телефон бренді</label>
+            <label><input type="radio" name="q1" value="c"> Видео ойын</label>
           </div>
 
           <div class="quiz-question">
             <p>2. Gemini арқылы не жасауға болады?</p>
-            <label><input type="radio" name="q2" value="a"> Жоспар мен мәтін құрастыру</label>
-            <label><input type="radio" name="q2" value="b"> Телефон жуу</label>
-            <label><input type="radio" name="q2" value="c"> Киім тігу</label>
+            <label><input type="radio" name="q2" value="a"> Мәтін мен жоспар құруға болады</label>
+            <label><input type="radio" name="q2" value="b"> Кір жуғышты жөндеуге болады</label>
+            <label><input type="radio" name="q2" value="c"> Дене шынықтыру жасауға болады</label>
           </div>
 
           <div class="quiz-question">
-            <p>3. Дұрыс нәтиже үшін не керек?</p>
-            <label><input type="radio" name="q3" value="a"> Нақты сұраныс</label>
-            <label><input type="radio" name="q3" value="b"> Қатты музыка</label>
-            <label><input type="radio" name="q3" value="c"> Экранды жабу</label>
+            <p>3. Жақсы жауап алу үшін не керек?</p>
+            <label><input type="radio" name="q3" value="a"> Нақты сұраныс жазу</label>
+            <label><input type="radio" name="q3" value="b"> Экран жарығын азайту</label>
+            <label><input type="radio" name="q3" value="c"> Телефонды сөндіру</label>
           </div>
 
           <button type="button" class="submit-btn" onclick="checkQuiz('quiz-gemini','result-gemini','finish-gemini',['a','a','a'])">Тестті аяқтау</button>
           <div id="result-gemini" class="result-box"></div>
         </form>
-      </section>
 
-      <section id="finish-gemini" class="finish-box">
-        <h2>🎉 Курс аяқталды!</h2>
-        <p>Сіз Gemini курсын сәтті аяқтадыңыз.</p>
-        <a href="index.html#courses" class="home-btn">Барлық курстарға оралу</a>
-      </section>
+        <div id="finish-gemini" class="finish-box">
+          <h3>🎉 Курс аяқталды!</h3>
+          <p>Сіз Gemini курсын сәтті аяқтадыңыз.</p>
+          <a href="index.html#courses">Барлық курстарға оралу</a>
+        </div>
+      </div>
     </div>
   </main>
 
