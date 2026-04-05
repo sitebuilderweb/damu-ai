@@ -7,83 +7,82 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="brand">
-        <div class="brand-mark">DA</div>
-        <span>Damu AI</span>
-      </a>
-      <nav class="main-nav">
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo"><span class="logo-icon">📘</span><span>Damu AI</span></a>
+      <nav class="menu">
         <a href="index.html">Басты бет</a>
         <a href="index.html#courses">Курстар</a>
-        <a href="index.html#about">Damu AI</a>
       </nav>
     </div>
   </header>
 
-  <main class="course-page-wrap">
-    <div class="container">
-      <a href="index.html" class="back-link">← Барлық курстарға қайту</a>
+  <section class="page-hero">
+    <div class="container page-top">
+      <a href="index.html#courses" class="back-btn">← Барлық курстар</a>
+      <div class="page-title">
+        <h1>ChatGPT курсы</h1>
+        <p>ChatGPT көмегімен мәтін жазу, сұрақ қою, жоспар құру және AI-ді тиімді пайдалану негіздері.</p>
+      </div>
+    </div>
+  </section>
 
-      <section class="course-hero">
-        <div class="course-hero-left">
-          <span class="section-label">ChatGPT курсы</span>
-          <h1>ChatGPT-пен тиімді жұмыс істеуді үйреніңіз</h1>
-          <p>Сұрақ қою, мәтін жазу, идея ойлап табу және күнделікті тапсырмаларды AI арқылы жеңілдету.</p>
-        </div>
-        <div class="course-hero-right">
-          <div class="course-big-icon">🤖</div>
+  <main class="course-layout">
+    <div class="container course-content">
+      <section class="info-box">
+        <h2>Курс мазмұны</h2>
+        <p>Бұл курста ChatGPT деген не, оны қалай қолдану керек, дұрыс сұрақ қою, мәтін дайындау және күнделікті жұмыста AI көмекшіні пайдалану жолдары түсіндіріледі.</p>
+      </section>
+
+      <section class="lessons-box">
+        <h2>Сабақтар</h2>
+        <div class="lesson-list">
+          <div class="lesson-item"><span>1-сабақ — ChatGPT-ге кіріспе</span><a href="https://youtu.be/xbvlByeAyUs?si=NSCvRXFFklDgMYJ7" target="_blank">Сабақты ашу</a></div>
+          <div class="lesson-item"><span>2-сабақ — Қалай дұрыс сұрақ қою керек</span><a href="https://youtu.be/rt_CX91Nhso?si=0B-xVsNN5OD9AjpI" target="_blank">Сабақты ашу</a></div>
+          <div class="lesson-item"><span>3-сабақ — Мәтін жазу</span><a href="https://youtu.be/xbvlByeAyUs?si=NSCvRXFFklDgMYJ7" target="_blank">Сабақты ашу</a></div>
+          <div class="lesson-item"><span>4-сабақ — Идея генерациясы</span><a href="https://youtu.be/rt_CX91Nhso?si=0B-xVsNN5OD9AjpI" target="_blank">Сабақты ашу</a></div>
+          <div class="lesson-item"><span>5-сабақ — Күнделікті жұмыста пайдалану</span><a href="https://youtu.be/xbvlByeAyUs?si=NSCvRXFFklDgMYJ7" target="_blank">Сабақты ашу</a></div>
+          <div class="lesson-item"><span>6-сабақ — Қорытынды</span><a href="https://youtu.be/rt_CX91Nhso?si=0B-xVsNN5OD9AjpI" target="_blank">Сабақты ашу</a></div>
         </div>
       </section>
 
-      <section class="lessons-section">
-        <h2>Сабақтар</h2>
-        <div class="lessons-grid">
-          <div class="lesson-card">
-            <h3>1-сабақ</h3>
-            <p>ChatGPT-ге кіріспе</p>
-            <a href="https://youtu.be/xbvlByeAyUs?si=NSCvRXFFklDgMYJ7" target="_blank">Сабақты ашу</a>
+      <section class="test-box">
+        <h2>Тест</h2>
+        <form id="quiz-chatgpt">
+          <div class="quiz-question">
+            <p>1. ChatGPT дегеніміз не?</p>
+            <label><input type="radio" name="q1" value="a"> AI көмекші</label>
+            <label><input type="radio" name="q1" value="b"> Фотоаппарат</label>
+            <label><input type="radio" name="q1" value="c"> Теледидар</label>
           </div>
 
-          <div class="lesson-card">
-            <h3>2-сабақ</h3>
-            <p>Негізгі мүмкіндіктер</p>
-            <a href="https://youtu.be/rt_CX91Nhso?si=0B-xVsNN5OD9AjpI" target="_blank">Сабақты ашу</a>
+          <div class="quiz-question">
+            <p>2. ChatGPT не істей алады?</p>
+            <label><input type="radio" name="q2" value="a"> Сұрақтарға жауап береді</label>
+            <label><input type="radio" name="q2" value="b"> Тамақ пісіреді</label>
+            <label><input type="radio" name="q2" value="c"> Телефон зарядтайды</label>
           </div>
 
-          <div class="lesson-card">
-            <h3>3-сабақ</h3>
-            <p>Сұрақтарды дұрыс жазу</p>
-            <a href="https://youtu.be/xbvlByeAyUs?si=NSCvRXFFklDgMYJ7" target="_blank">Сабақты ашу</a>
+          <div class="quiz-question">
+            <p>3. Жақсы нәтиже алу үшін не маңызды?</p>
+            <label><input type="radio" name="q3" value="a"> Дұрыс әрі нақты сұрақ жазу</label>
+            <label><input type="radio" name="q3" value="b"> Экранды сөндіру</label>
+            <label><input type="radio" name="q3" value="c"> Интернетті өшіру</label>
           </div>
 
-          <div class="lesson-card">
-            <h3>4-сабақ</h3>
-            <p>Мәтін және идея жасау</p>
-            <a href="https://youtu.be/rt_CX91Nhso?si=0B-xVsNN5OD9AjpI" target="_blank">Сабақты ашу</a>
-          </div>
+          <button type="button" class="submit-btn" onclick="checkQuiz('quiz-chatgpt','result-chatgpt','finish-chatgpt',['a','a','a'])">Тестті аяқтау</button>
+          <div id="result-chatgpt" class="result-box"></div>
+        </form>
+      </section>
 
-          <div class="lesson-card">
-            <h3>5-сабақ</h3>
-            <p>Практикалық қолдану</p>
-            <a href="https://youtu.be/xbvlByeAyUs?si=NSCvRXFFklDgMYJ7" target="_blank">Сабақты ашу</a>
-          </div>
-
-          <div class="lesson-card">
-            <h3>6-сабақ</h3>
-            <p>Қорытынды сабақ</p>
-            <a href="https://youtu.be/rt_CX91Nhso?si=0B-xVsNN5OD9AjpI" target="_blank">Сабақты ашу</a>
-          </div>
-        </div>
+      <section id="finish-chatgpt" class="finish-box">
+        <h2>🎉 Курс аяқталды!</h2>
+        <p>Сіз ChatGPT курсын сәтті аяқтадыңыз.</p>
+        <a href="index.html#courses" class="home-btn">Барлық курстарға оралу</a>
       </section>
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>© 2026 Damu AI</div>
-      <div>ChatGPT курсы</div>
-    </div>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
